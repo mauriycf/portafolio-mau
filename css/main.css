@@ -1,0 +1,619 @@
+body
+{
+  margin: 0px;
+  padding: 0px;
+  font-family: Roboto;
+}
+
+.contenedor
+{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.titulo-seccion
+{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.titulo-seccion h2
+{
+  color: #0089E0;
+  font-size: 3.125rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.titulo-seccion p
+{
+  color: #979797;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Sidebar */
+
+.sidebar
+{
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  left: -250px;
+  top: 0;
+  transition: all ease 0.5s;
+  z-index: 100;
+  background: #fff;
+}
+
+.sidebar .imagen
+{
+  width: 100%;
+  height: 200px;
+}
+
+.sidebar ul
+{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.sidebar ul li a
+{
+  color: #000;
+  text-decoration: none;
+  display: block;
+  width: 210px;
+  padding: 10px 20px;
+  transition: all ease 0.3s;
+  font-size: 16px;
+  font-family: Verdana;
+}
+
+.sidebar ul li a:hover
+{
+  background: #F2F2F2;
+  transition: all ease 0.3s;
+}
+
+.sidebar.activo
+{
+  left: 0;
+  box-shadow: 0 0 50px black;
+}
+
+.sidebar .imagen
+{
+  background: url('http://www.telemundo.com/sites/nbcutelemundo/files/images/promo/article/2017/04/24/mujer-en-lenceria-mirando-e-celular-en-la-cama.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* hamburger button */
+
+#wrapper
+{
+  background: #29afd1;
+  display: inline-block;
+  border-radius: 500px;
+  margin: 10px;
+  position: absolute;;
+  padding: 10px;
+  cursor: pointer;
+  top: 0;
+  left: 250px;
+  display: none;
+  z-index: 100;
+}
+
+.main-item
+{
+  width: 25px;
+  height: 25px;
+  position: relative;
+}
+
+.line
+{
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  border-radius: 15px;
+  transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
+}
+
+.line01 {
+	top:19%;
+}
+
+.line02 {
+	top:49%;
+}
+
+.line03 {
+	top:79%;
+}
+
+.menu.close .line01 {
+	transform:rotate(45deg);
+	top:49%;
+}
+
+.menu.close .line02, .menu.close .line03 {
+	transform:rotate(-45deg);
+	top:49%;
+}
+
+/* Navbar */
+
+.navbar
+{
+  margin: 0;
+  width: 100%;
+  min-height: 50px;
+  border-bottom: 1px solid rgba(255,255,255, 0.15);
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+.social-media
+{
+  margin-right: 50px;
+}
+
+.logo
+{
+  display: inline-block;
+  width: 30px;
+  margin-left: 40px;
+}
+
+.logo img
+{
+  width: 100%;
+  vertical-align: top;
+}
+
+.menu a, .social-media a
+{
+  display: inline-block;
+  padding: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.876rem;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  transition: all .3s ease;
+}
+
+.menu a:hover, .social-media a:hover
+{
+  color: #0089E0;
+}
+
+.menu a:last-child, .social-media a:last-child
+{
+  padding-right: 0;
+}
+
+.social-media a i
+{
+  font-size: 1rem;
+}
+
+/* menu fixed */
+
+.navbar-fixed
+{
+  width: 100%;
+  min-height: 68px;
+  border-bottom: 1px solid rgba(204,204,204,0.5);
+  padding: 0 36px;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition: all .4s ease;
+  margin-top: -104px;
+}
+
+.navbar-fixed .menu a, .social-media a
+{
+  color: #444444;
+}
+
+.navbar-fixed .menu a:hover, .social-media a:hover
+{
+  color: #0089E0;
+}
+
+/*---------  Main  -----------*/
+
+/* Banner principal */
+
+.main
+{
+  width: 100%;
+  margin-top: -50px;
+}
+.main .banner-principal
+{
+  width: 100%;
+  position: relative;
+}
+
+.main .banner-principal .banner
+{
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://i.pinimg.com/originals/f1/c7/92/f1c792a4bfb3c713bf063dbfee390306.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.main .banner-principal .text-banner
+{
+  display: inline-block;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.main .banner-principal .text-banner h1
+{
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.main .banner-principal .text-banner h2
+{
+  font-size: 6.0625rem;
+  font-weight: 700;
+  line-height: 90px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.main .banner-principal .text-banner a
+{
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #0089E0;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
+}
+
+.main .banner-principal .text-banner a:hover
+{
+  box-shadow: 5px 5px 10px black;
+  transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
+}
+
+.main .banner-principal .text-banner img
+{
+  width: 200px;
+  margin-bottom: -100px;
+}
+
+/* Proyectos */
+
+.main .proyectos
+{
+  background: #F3F4FA;
+  padding: 40px 0 54px 0;
+}
+
+.main .proyectos .galeria-proyectos
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 34px;
+  border-bottom: 1px solid #ccc;
+}
+
+.main .proyectos .galeria-proyectos .proyecto
+{
+  width: 32%;
+  margin-bottom: 2%;
+  cursor: pointer;
+}
+
+.main .proyectos .galeria-proyectos .proyecto img
+{
+  width: 100%;
+  vertical-align: top;
+}
+
+/*--------------------------*/
+
+/* modal fotos proyecto */
+
+/*---------------------*/
+
+/* Seccion acerca de */
+
+.main .acerca-de
+{
+  background: #F3F4FA;
+}
+
+.main .acerca-de .contenedor
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.main .acerca-de .contenedor .titulo-seccion
+{
+  width: 33.33%;
+  text-align: left;
+}
+
+.main .acerca-de .contenedor .titulo-seccion h2
+{
+  margin-bottom: 0;
+}
+
+.main .acerca-de .contenedor .texto-acerca-de
+{
+  width: 66.66%;
+  text-align: justify;
+}
+
+.main .acerca-de .contenedor .texto-acerca-de p
+{
+  color: #979797;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Slider */
+
+.main .contenedor-slider
+{
+  width: 100%;
+  overflow: hidden;
+  background: #F3F4FA;
+  padding: 54px 0;
+  position: relative;
+}
+
+.main .contenedor-slider .slider
+{
+  width: 400%;
+  display: flex;
+}
+
+.main .contenedor-slider .slider .slide
+{
+  width: 15%;
+  max-width: 950px;
+  margin-right: 0.7%;
+  box-shadow: 0 20px 40px #aaa;
+}
+
+.main .contenedor-slider .slider .slide img
+{
+  width: 100%;
+  vertical-align: top;
+}
+
+.main .contenedor-slider .btn-anterior,
+.main .contenedor-slider .btn-siguiente
+{
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.main .contenedor-slider .btn-anterior
+{
+  left: 2%;
+}
+
+.main .contenedor-slider .btn-siguiente
+{
+  right: 2%;
+}
+
+.main .contenedor-slider .btn-anterior i,
+.main .contenedor-slider .btn-siguiente i
+{
+  color: #fff;
+}
+
+.main .contenedor-slider .btn-anterior i:hover,
+.main .contenedor-slider .btn-siguiente i:hover
+{
+  color: #0089E0;
+  transition: all ease 0.3s;
+}
+
+/* Nuestro Equipo */
+
+.main .nuestro-equipo
+{
+  background: #F3F4FA;
+  padding-top: 54px;
+  padding-bottom: 108px;
+}
+
+.main .nuestro-equipo .equipo
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo
+{
+  background: #fff;
+  padding: 30px 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 250px;
+  box-shadow: 0 9px 32px -1px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo:first-child,
+.main .nuestro-equipo .equipo .persona-equipo:last-child
+{
+  position: relative;
+  top: 20px;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo .foto
+{
+  width: 50%;
+  max-width: 100px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo .foto img
+{
+  width: 100%;
+  border-radius: 100%;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo .texto h3
+{
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #0089E0;
+  margin-bottom: 0;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo .texto h4
+{
+  color: #979797;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo .texto p
+{
+  color: #979797;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* informacion extra */
+
+.main .info-extra
+{
+  background: #191919;
+  padding: 130px 0;
+}
+
+.main .info-extra .contenedor
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.main .info-extra .contenedor .info
+{
+  width: 50%;
+}
+
+.main .info-extra .contenedor .info .contenido-info
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.main .info-extra .contenedor .info .contenido-info:first-child
+{
+  margin-bottom: 30px;
+}
+
+.main .info-extra .contenedor .info .contenido-info .icono-info
+{
+  width: 5%;
+  position: relative;
+  top: 39px;
+}
+
+.main .info-extra .contenedor .info .contenido-info .icono-info i
+{
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.main .info-extra .contenedor .info .contenido-info .texto-info
+{
+  margin-left: 3%;
+}
+
+.main .info-extra .contenedor .info .contenido-info .texto-info h4
+{
+  font-size: 1.875rem;
+  line-height: 24px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.main .info-extra .contenedor .info .contenido-info .texto-info p
+{
+  color: #979797;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.main .info-extra .contenedor .foto
+{
+  width: 50%;
+  height: 300px;
+  box-shadow: 0 9px 32px -1px rgba(0,0,0,0.5);
+  background-image: url('../images/image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* mobile */
+@media screen and (max-width: 768px)
+{
+  #wrapper{
+    display: block;
+  }
+
+  .navbar{
+    display: none;
+  }
+}
